@@ -5,21 +5,21 @@
 class Runtui < Formula
   desc "Interactive TUI for running project tasks"
   homepage "https://github.com/pedromendonka/runtui"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.0/runtui_darwin_amd64.tar.gz"
-      sha256 "f116585afd945ac0d79de022eb25dae473bc184872033a44a21bc59262914761"
+      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.1/runtui_darwin_amd64.tar.gz"
+      sha256 "8d6e7f8112e5ac78ddc608dad4cc529d0d1219e847c9bd0a6deac607868882b0"
 
       define_method(:install) do
         bin.install "runtui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.0/runtui_darwin_arm64.tar.gz"
-      sha256 "260395a595506d882cdae8b0017764034612b31bd1ca5a0be52095b6e1019c69"
+      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.1/runtui_darwin_arm64.tar.gz"
+      sha256 "38f01b7588898009f5a542a49d9cc005416872221324f91ea7849a5853e9b964"
 
       define_method(:install) do
         bin.install "runtui"
@@ -29,15 +29,15 @@ class Runtui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.0/runtui_linux_amd64.tar.gz"
-      sha256 "c12f66385fc7bd8987fec75b9c7ce0baa8ea12192c2d96fec97dc776677677cd"
+      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.1/runtui_linux_amd64.tar.gz"
+      sha256 "7a8dd96bbb5399f9030abc8ed4405547c99127818320c4c9a611cd3d5cc797d1"
       define_method(:install) do
         bin.install "runtui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.0/runtui_linux_arm64.tar.gz"
-      sha256 "5c484dd7e41aba1b460fc099667c25ce992b05d1995f3fe3a43b12f471a337dd"
+      url "https://github.com/pedromendonka/runtui/releases/download/v0.1.1/runtui_linux_arm64.tar.gz"
+      sha256 "49ac1ee7a1691cc630fc8d330a667e2c612c99f1584ecdabd508fee1d54b0e3e"
       define_method(:install) do
         bin.install "runtui"
       end
